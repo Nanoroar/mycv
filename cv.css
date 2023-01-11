@@ -118,7 +118,7 @@ section.contactInfo div.phone p{
 
 .main{
     display: flex;
-    /* width: 90%; */
+    color: #7a807a;
     margin: 0 auto;
 }
 
@@ -163,7 +163,8 @@ text-transform: uppercase;
 
 .sidebar p{
     font-size: 1rem;
-    color: var(--header-background-color);
+    /* color: var(--header-background-color); */
+    /* color: #939493; */
 }
 
 
