@@ -1,6 +1,7 @@
 :root{
     --main--icons--color: #af9661;
     --header-background-color:#252e3e;
+    --main-title-color:#af9661;
 }
 
 
@@ -11,13 +12,17 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html{
+    background-color: #efeff0;
+}
+
 header{
     background-color: var(--header-background-color);
     /* background-color: #252e3e; */
     height: auto;
     color: var(--main--icons--color);
     padding-bottom: 20px;
-    position: relative;
+   
 }
 
 .letters div h2{
@@ -40,143 +45,190 @@ h1{
     font-weight: 900;
     font-size: 2.5rem;
     text-align: center;
-    letter-spacing: 5px ;
-    padding-bottom: 20px;
+    letter-spacing: 10px ;
+   
+}
+section.main-title{
+    display: flex;  
+    width: 90%;
+    margin: 0 auto;
+    height: 50px;
 }
 
-section.mainTitle{
-    display: flex;
+section.main-title div{
+width: calc(100%/3);
+display: flex;
     justify-content: center;
-    margin: auto;
-    width: 80%;
-    
-    
+    align-items: center;
 }
-
-h4{
-    text-align: center;
-    font-weight: 900;
-    position: absolute;
-    transform: translate(-50%, 20%);
-    padding-bottom: 20px;
-    letter-spacing:2px
-    
+section.main-title div h4{
+letter-spacing: 2px;
+font-weight: 900;
+color: var(--main-title-color);
 }
-
-section.mainTitle div.lines {
-flex: 2
-}
-
-section.mainTitle div hr{
-width: 80%;
-height: 2px;;
-text-align: center;
-margin:10px auto;
-background-color: var(--main--icons--color);
-border: none;
+.main-title .vertical-line div{
+    width: 100%;
+    height: 1px;
+    color: var(--main-title-color);
+    background-color:var(--main-title-color) ;
 }
 
 section.contactInfo{
     display: flex;
-    justify-content: center;
-    margin: 20px auto;
-    
+    align-items: center;
+    width: 90%;
+    height: 30%;
+    margin: 0 auto;
+    padding-bottom: 10px;
 }
 
 section.contactInfo div{
-    text-align: center;
-    flex: 1;
-}
-section.contactInfo div .phone{
-    flex: 1;
+    width:calc((100%/3));
 }
 
-.phone, .email, .adress{
-    position: relative;
-    padding:40px 0px;
+section.contactInfo div p{
+color:#fff;
+line-height: 1.6rem;
 }
-.phone{
-    padding-top: 70px;
-}
-
-.email::after{
-   content: "";
-   width: 1px;
-   background-color: var(--main--icons--color);
-   position: absolute;
-   height: 70%;
-   left: 0;
-   bottom: 10px;
-    /* border-left: 1px solid var(--main--icons--color); */
-}
-
-.phone::after{
-    content: "";
-    width: 1px;
-    background-color: var(--main--icons--color);
-    position: absolute;
-    height: 70%;
-    left: 0;
-    bottom: 10px;
-     /* border-left: 1px solid var(--main--icons--color); */
- }
-
- .adress::after{
-    content: "";
-    width: 80%;
-    background-color: var(--main--icons--color);
-    position: absolute;
-    height: 1px;
-    top: 0;
-    right: 5px;
- }
- 
- 
- .email::before{
-    content: "";
-    width: 80%;
-    background-color: var(--main--icons--color);
-    position: absolute;
-    height: 1px;
-    top: 0;
-    left: 5px;
     
- }
-
- span{
-    line-height: 1.5rem;
-    color:#fff;
- }
-
- span i {
-    color: var(--main--icons--color);
+section.contactInfo div p i{
     font-size: 1.5rem;
-   
- }
+    color: var(--main--icons--color);
+}
 
+.contactInfo div p {
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid var(--main--icons--color);
+    border-right: 1px solid var(--main--icons--color);
+    height: 90px;
+}
+
+section.contactInfo div.phone p{
+    align-self: center;
+    line-height: 2rem;
+    
+}
+
+.main{
+    display: flex;
+    /* width: 90%; */
+    margin: 0 auto;
+}
+
+.main .sidebar{
+    
+    background-color: #efeff0;
+    width: calc(100%/3);
+    
+}
+.main .sidebar .sidebar-content{
+    width: 75%;
+    margin: auto;
+}
+#personal-image{
+    margin: 50px auto 0px;
+    text-align: center;
+}
+
+div#personal-image img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.main .main-content{
+    width: calc(100% - 100%/3);
+    background-color: #fff;
+
+}
+
+.sidebar-title{
+color: var(--header-background-color);
+border-top: 1px solid var(--header-background-color);
+border-bottom: 1px solid var(--header-background-color);
+padding: 10px 0px;
+letter-spacing: 3px;
+font-weight: 900;
+margin-bottom: 10px;
+margin-top: 50px;
+text-transform: uppercase;
+}
+
+.sidebar p{
+    font-size: 1rem;
+    color: var(--header-background-color);
+}
+
+
+
+h4.education-title{
+    margin-top: 20px;
+    color: var(--header-background-color);
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h4.education-place{
+    color: var(--main-title-color);
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
 
 @media only screen and (max-width:600px){
-.adress, .phone, .email{
-    display: block;
+    header{
+        width: 100%;
+    }
 
+    h1{
+        margin-bottom: 1rem;
+    }
+    section.main-title{
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    section.main-title div{
+        width: 100%;
+    }
+
+    section.contactInfo{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+    section.contactInfo div{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }
-.contactInfo{
-    flex-wrap: wrap;
+
+@media only screen and (max-width:780px){
+.main{
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.email::after{ 
-    display: none;
+.main .sidebar{
+    width: 100%;
 }
 
-.phone::after{
-display: none;
+.sidebar .sidebar-content{
+    width: 100%;
 }
 
-.adress::after{
-    display: none;
-}
- .email::before{
-    display: none;;
+.main .main-content{
+    width: 100%;
 }
 }
