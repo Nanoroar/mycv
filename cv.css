@@ -2,6 +2,7 @@
     --main--icons--color: #af9661;
     --header-background-color:#252e3e;
     --main-title-color:#af9661;
+    --main-text-color: #7a807a;
 }
 
 
@@ -169,7 +170,7 @@ text-transform: uppercase;
 
 
 
-h4.education-title{
+.education-title{
     margin-top: 20px;
     color: var(--header-background-color);
     font-weight: 900;
@@ -177,12 +178,91 @@ h4.education-title{
     text-transform: uppercase;
 }
 
-h4.education-place{
+.education-place{
     color: var(--main-title-color);
     font-weight: 900;
     letter-spacing: 1px;
     text-transform: capitalize;
     margin-bottom: 10px;
+}
+
+.driving-license{
+    margin-bottom: 20px;
+}
+.content{
+    width: 90%;
+    margin: 30px auto;
+}
+
+.content p:first-child {
+    padding: 20px 0;
+    margin-bottom: 100px;
+}
+
+.main-content-title{
+color: var(--header-background-color);
+border-top: 1px solid var(--header-background-color);
+border-bottom: 1px solid var(--header-background-color);
+padding: 10px 0px;
+letter-spacing: 3px;
+font-weight: 900;
+margin:20px 0;
+text-transform: uppercase;
+}
+
+.main-content-item{
+    display: flex;
+   
+}
+
+.main-content-item div.mc-item-place-time{
+    width: calc(100%/3);
+    padding-right: 10px;
+    padding-top: 2px;
+}
+
+.main-content-item div.mc-item-description{
+    width: calc(100% - 100%3);
+    display: flex;
+}
+
+.mc-item-description p{
+    padding-bottom: 100px;
+    width: 100%;
+}
+.circle{
+    display: inline-block;
+    margin-right: 10px;
+    width: 11px;
+    height: 11px;
+    background-color: var(--main-text-color);
+    border-radius: 50%;
+    padding-bottom: 0px;;
+}
+
+.mc-left-styling{
+    position: relative;
+}
+
+.line{
+    width: 1px;
+    background-color: var(--main-text-color);
+    height: 100%;
+    left: 5px;
+    position: absolute;
+    top: 10px;   
+
+
+}
+
+.main-content-item h5{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.mc-item-place-time h5{
+    font-weight: 500;
+    font-size: 14px;
 }
 
 @media only screen and (max-width:600px){
