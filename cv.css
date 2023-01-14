@@ -260,12 +260,54 @@ text-transform: uppercase;
 .main-content-item h5{
     margin-top: 0;
     margin-bottom: 10px;
+    overflow-wrap:break-word ;
 }
 
 .mc-item-place-time h5{
     font-weight: 500;
     font-size: 14px;
+    overflow-wrap:break-word ;
 }
+
+.languages ul,.skills ul {
+    list-style-position: inside;
+    -ms-list-style-position: inside;   
+}
+
+
+.skills ul li{
+font-size: 1.1rem;
+letter-spacing: 1px; 
+width: 100%;
+height: 100px;
+}
+
+.skills ul li span{
+display: inline-block;
+}
+.languages ul li{
+    font-size: 1.2rem;
+    height: 50px;
+}
+.languages ul li::marker, .skills ul li::marker{
+    color: var(--main-title-color);
+    font-size: 25px;
+    margin-right: 0px !important;
+}
+
+footer{
+    height: 100px;
+    text-align: center;
+    background-color: var(--header-background-color);
+}
+
+footer p{
+    position: relative;
+    top: 70%;
+    color: var(--main--icons--color);
+
+}
+
 
 @media only screen and (max-width:600px){
     header{
@@ -295,6 +337,11 @@ text-transform: uppercase;
         width: 100%;
         margin-bottom: 1rem;
     }
+
+    .skills ul, .languages ul{
+        list-style-position: outside;
+        padding-left: 5%;
+    }
 }
 
 @media only screen and (max-width:780px){
@@ -314,4 +361,20 @@ text-transform: uppercase;
 .main .main-content{
     width: 100%;
 }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    /* Chrome and Safari-specific styles go here */
+    /* .skills ul li span{
+        position: relative;
+        left: -20px;
+    } */
+}
+
+@-moz-document url-prefix() {
+    /* Firefox-specific styles go here */
+    /* .skills ul li span{
+        position: relative;
+        left: 0px;
+    } */
 }
